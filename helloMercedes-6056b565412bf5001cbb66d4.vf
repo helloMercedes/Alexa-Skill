@@ -1,0 +1,2129 @@
+{
+  "project": {
+    "_id": "6055fd9c3038d7001e62c162",
+    "name": "helloMercedes",
+    "teamID": "eaE0y9ek6y",
+    "devVersion": "6056b565412bf5001cbb66d4",
+    "platform": "alexa",
+    "platformData": {
+      "products": []
+    },
+    "members": [],
+    "image": "",
+    "linkType": "STRAIGHT",
+    "creatorID": 59546
+  },
+  "version": {
+    "_id": "6056b565412bf5001cbb66d4",
+    "name": "version fyNSU",
+    "projectID": "6055fd9c3038d7001e62c162",
+    "variables": [
+      "Location",
+      "ToldEQC",
+      "ToldAMG",
+      "ToldHistory"
+    ],
+    "platformData": {
+      "slots": [],
+      "intents": [],
+      "settings": {
+        "events": null,
+        "customInterface": false,
+        "session": {
+          "type": "restart"
+        },
+        "repeat": "ALL",
+        "accountLinking": null,
+        "error": null
+      },
+      "publishing": {
+        "summary": "",
+        "invocations": [
+          "open Mercedes zurich",
+          "start Mercedes zurich",
+          "launch Mercedes zurich"
+        ],
+        "smallIcon": "",
+        "largeIcon": "",
+        "hasAds": false,
+        "personal": false,
+        "forExport": true,
+        "invocationName": "Mercedes zurich",
+        "hasPurchase": false,
+        "forChildren": false,
+        "description": "",
+        "instructions": "",
+        "privacyPolicy": "",
+        "termsAndConditions": "",
+        "keywords": "",
+        "category": "",
+        "locales": [
+          "en-US"
+        ],
+        "updatesDescription": null
+      },
+      "status": {
+        "stage": "DEV"
+      }
+    },
+    "rootDiagramID": "6056b5655ffb660033a907f1",
+    "creatorID": 59546
+  },
+  "diagrams": {
+    "6056b5655ffb660033a907f3": {
+      "_id": "6056b5655ffb660033a907f3",
+      "offsetX": -1490.6000000000001,
+      "offsetY": 43.400000000000006,
+      "zoom": 80,
+      "variables": [],
+      "children": [],
+      "nodes": {
+        "6055f6894b0743f65d12b4d3": {
+          "nodeID": "6055f6894b0743f65d12b4d3",
+          "type": "start",
+          "coords": [
+            165,
+            5
+          ],
+          "data": {
+            "name": "Start",
+            "color": "standard",
+            "ports": [
+              {
+                "type": "",
+                "target": "605642d0a8dfcead31900d89",
+                "id": "6055f68f4b0743f65d12b4d4"
+              }
+            ],
+            "steps": []
+          }
+        },
+        "605623c74b0743f65d12b76f": {
+          "nodeID": "605623c74b0743f65d12b76f",
+          "type": "speak",
+          "data": {
+            "randomize": false,
+            "dialogs": [
+              {
+                "voice": "Alexa",
+                "content": "Did you hear the massive sound? It makes my whole body shake. That's our new C-Class tuned by AMG. Shall I tell you some exciting details?"
+              }
+            ],
+            "ports": [
+              {
+                "type": "",
+                "target": "605623f84b0743f65d12b7ab",
+                "id": "605623c74b0743f65d12b770"
+              }
+            ]
+          }
+        },
+        "605623c74b0743f65d12b76d": {
+          "nodeID": "605623c74b0743f65d12b76d",
+          "type": "block",
+          "coords": [
+            1015,
+            -86.50000000000006
+          ],
+          "data": {
+            "name": "Block",
+            "color": "standard",
+            "steps": [
+              "605623c74b0743f65d12b76f"
+            ]
+          }
+        },
+        "605623f84b0743f65d12b7ab": {
+          "nodeID": "605623f84b0743f65d12b7ab",
+          "type": "interaction",
+          "data": {
+            "name": "Choice",
+            "else": {
+              "type": "path",
+              "randomize": false,
+              "reprompts": [
+                {
+                  "voice": "Alexa",
+                  "content": ""
+                }
+              ]
+            },
+            "choices": [
+              {
+                "intent": "AMAZON.YesIntent",
+                "mappings": []
+              }
+            ],
+            "reprompt": null,
+            "chips": null,
+            "ports": [
+              {
+                "type": "",
+                "target": "6056244b4b0743f65d12b869",
+                "id": "605623f84b0743f65d12b7ac"
+              },
+              {
+                "type": "",
+                "target": "605624c24b0743f65d12b905",
+                "id": "605623f84b0743f65d12b7ad"
+              }
+            ]
+          }
+        },
+        "605623f84b0743f65d12b7a9": {
+          "nodeID": "605623f84b0743f65d12b7a9",
+          "type": "block",
+          "coords": [
+            1413.75,
+            80.99999999999994
+          ],
+          "data": {
+            "name": "Block",
+            "color": "standard",
+            "steps": [
+              "605623f84b0743f65d12b7ab"
+            ]
+          }
+        },
+        "6056244b4b0743f65d12b86b": {
+          "nodeID": "6056244b4b0743f65d12b86b",
+          "type": "speak",
+          "data": {
+            "randomize": false,
+            "dialogs": [
+              {
+                "voice": "Alexa",
+                "content": "<break strength=\"strong\" />If you want to sit in the car, I can show you the sound of the car while accellerating down the track."
+              }
+            ],
+            "ports": [
+              {
+                "type": "",
+                "target": "605624d84b0743f65d12b912",
+                "id": "6056244b4b0743f65d12b86c"
+              }
+            ]
+          }
+        },
+        "6056244b4b0743f65d12b869": {
+          "nodeID": "6056244b4b0743f65d12b869",
+          "type": "block",
+          "coords": [
+            1418.75,
+            393.49999999999994
+          ],
+          "data": {
+            "name": "Block",
+            "color": "standard",
+            "steps": [
+              "6056244b4b0743f65d12b86b"
+            ]
+          }
+        },
+        "605624c24b0743f65d12b902": {
+          "nodeID": "605624c24b0743f65d12b902",
+          "type": "speak",
+          "data": {
+            "randomize": false,
+            "dialogs": [
+              {
+                "voice": "Alexa",
+                "content": "When you press the accelerator in this car, almost five hundred horses pull you along the track."
+              }
+            ],
+            "ports": [
+              {
+                "type": "",
+                "target": "6056244b4b0743f65d12b86b",
+                "id": "605624c24b0743f65d12b904"
+              }
+            ]
+          }
+        },
+        "605624c24b0743f65d12b905": {
+          "nodeID": "605624c24b0743f65d12b905",
+          "type": "block",
+          "coords": [
+            761.25,
+            369.74999999999994
+          ],
+          "data": {
+            "name": "Block",
+            "color": "standard",
+            "steps": [
+              "605624c24b0743f65d12b902"
+            ]
+          }
+        },
+        "605624d84b0743f65d12b90e": {
+          "nodeID": "605624d84b0743f65d12b90e",
+          "type": "interaction",
+          "data": {
+            "name": "Choice",
+            "else": {
+              "type": "path",
+              "randomize": false,
+              "reprompts": [
+                {
+                  "voice": "Alexa",
+                  "content": ""
+                }
+              ]
+            },
+            "choices": [
+              {
+                "intent": "AMAZON.YesIntent",
+                "mappings": []
+              }
+            ],
+            "reprompt": null,
+            "chips": null,
+            "ports": [
+              {
+                "type": "",
+                "target": null,
+                "id": "605624d84b0743f65d12b910"
+              },
+              {
+                "type": "",
+                "target": "60564bafa8dfcead31900fb6",
+                "id": "605624d84b0743f65d12b911"
+              }
+            ]
+          }
+        },
+        "605624d84b0743f65d12b912": {
+          "nodeID": "605624d84b0743f65d12b912",
+          "type": "block",
+          "coords": [
+            1978.75,
+            342.24999999999994
+          ],
+          "data": {
+            "name": "Block",
+            "color": "standard",
+            "steps": [
+              "605624d84b0743f65d12b90e"
+            ]
+          }
+        },
+        "605624f44b0743f65d12b91b": {
+          "nodeID": "605624f44b0743f65d12b91b",
+          "type": "speak",
+          "data": {
+            "randomize": false,
+            "dialogs": [
+              {
+                "voice": "audio",
+                "content": "https://s3.amazonaws.com/com.getstoryflow.audio.production/1616266024560-bmwfreesound.wav"
+              }
+            ],
+            "ports": [
+              {
+                "type": "",
+                "target": null,
+                "id": "605624f44b0743f65d12b91d"
+              }
+            ]
+          }
+        },
+        "605624f44b0743f65d12b91e": {
+          "nodeID": "605624f44b0743f65d12b91e",
+          "type": "block",
+          "coords": [
+            2951.25,
+            377.25
+          ],
+          "data": {
+            "name": "Block",
+            "color": "standard",
+            "steps": [
+              "605624f44b0743f65d12b91b"
+            ]
+          }
+        },
+        "605642d0a8dfcead31900d86": {
+          "nodeID": "605642d0a8dfcead31900d86",
+          "type": "speak",
+          "data": {
+            "randomize": false,
+            "dialogs": [
+              {
+                "voice": "Alexa",
+                "content": "<break time=\"9s\" />"
+              }
+            ],
+            "ports": [
+              {
+                "type": "",
+                "target": "605623c74b0743f65d12b76f",
+                "id": "605642d0a8dfcead31900d88"
+              }
+            ]
+          }
+        },
+        "605642d0a8dfcead31900d89": {
+          "nodeID": "605642d0a8dfcead31900d89",
+          "type": "block",
+          "coords": [
+            557.5,
+            -110.25000000000006
+          ],
+          "data": {
+            "name": "Block",
+            "color": "standard",
+            "steps": [
+              "605642d0a8dfcead31900d86"
+            ]
+          }
+        },
+        "60564bafa8dfcead31900fb3": {
+          "nodeID": "60564bafa8dfcead31900fb3",
+          "type": "set",
+          "data": {
+            "sets": [
+              {
+                "variable": "ToldAMG",
+                "expression": {
+                  "type": "value",
+                  "value": "true",
+                  "depth": 0
+                }
+              }
+            ],
+            "ports": [
+              {
+                "type": "",
+                "target": "605624f44b0743f65d12b91e",
+                "id": "60564bafa8dfcead31900fb5"
+              }
+            ]
+          }
+        },
+        "60564bafa8dfcead31900fb6": {
+          "nodeID": "60564bafa8dfcead31900fb6",
+          "type": "block",
+          "coords": [
+            2470,
+            405.99999999999994
+          ],
+          "data": {
+            "name": "Block",
+            "color": "standard",
+            "steps": [
+              "60564bafa8dfcead31900fb3"
+            ]
+          }
+        }
+      },
+      "versionID": "6056b565412bf5001cbb66d4",
+      "creatorID": 59546,
+      "name": "AMG (COPY)",
+      "modified": 1616301465
+    },
+    "6056b5655ffb660033a907f6": {
+      "_id": "6056b5655ffb660033a907f6",
+      "name": "Help User",
+      "offsetX": 196.5723910133667,
+      "offsetY": 143.32399142840148,
+      "zoom": 76.41405779564307,
+      "variables": [],
+      "nodes": {
+        "5f9f562f11b31520c2a2a6e1": {
+          "nodeID": "5f9f562f11b31520c2a2a6e1",
+          "type": "start",
+          "coords": [
+            360,
+            120
+          ],
+          "data": {
+            "name": "Start",
+            "color": "standard",
+            "ports": [
+              {
+                "type": "",
+                "target": "5f9f562f11b31520c2a2a6e2",
+                "id": "5fde75904a001a20aa671626"
+              }
+            ],
+            "steps": []
+          }
+        },
+        "5f9f562f11b31520c2a2a6e2": {
+          "nodeID": "5f9f562f11b31520c2a2a6e2",
+          "type": "speak",
+          "data": {
+            "randomize": false,
+            "dialogs": [
+              {
+                "voice": "Alexa",
+                "content": "You said help. Do you want to continue?"
+              }
+            ],
+            "ports": [
+              {
+                "type": "",
+                "target": "5f9f562f11b31520c2a2a6e4",
+                "id": "5fde75904a001a20aa671627"
+              }
+            ]
+          }
+        },
+        "5f9f562f11b31520c2a2a6e3": {
+          "nodeID": "5f9f562f11b31520c2a2a6e3",
+          "type": "block",
+          "coords": [
+            808.6506721313523,
+            121.24568139701532
+          ],
+          "data": {
+            "name": "Help Message",
+            "color": "standard",
+            "steps": [
+              "5f9f562f11b31520c2a2a6e2",
+              "5f9f562f11b31520c2a2a6e4"
+            ]
+          }
+        },
+        "5f9f562f11b31520c2a2a6e4": {
+          "nodeID": "5f9f562f11b31520c2a2a6e4",
+          "type": "interaction",
+          "data": {
+            "name": "Choice",
+            "else": {
+              "type": "reprompt",
+              "randomize": false,
+              "reprompts": [
+                {
+                  "voice": "Alexa",
+                  "content": "Do you want to continue?"
+                },
+                {
+                  "voice": "Alexa",
+                  "content": "Please say yes or no."
+                }
+              ]
+            },
+            "choices": [
+              {
+                "intent": "AMAZON.YesIntent",
+                "mappings": []
+              },
+              {
+                "intent": "AMAZON.NoIntent",
+                "mappings": []
+              }
+            ],
+            "reprompt": null,
+            "chips": null,
+            "ports": [
+              {
+                "type": "",
+                "target": null,
+                "id": "5fde75904a001a20aa671628"
+              },
+              {
+                "type": "",
+                "target": null,
+                "id": "5fde75904a001a20aa671629"
+              },
+              {
+                "type": 2,
+                "target": "5f9f562f11b31520c2a2a6e6",
+                "id": "5fde75904a001a20aa67162a"
+              }
+            ]
+          }
+        },
+        "5f9f562f11b31520c2a2a6e5": {
+          "nodeID": "5f9f562f11b31520c2a2a6e5",
+          "type": "exit",
+          "data": {
+            "ports": []
+          }
+        },
+        "5f9f562f11b31520c2a2a6e6": {
+          "nodeID": "5f9f562f11b31520c2a2a6e6",
+          "type": "block",
+          "coords": [
+            1295.0066750587603,
+            408.4923354011805
+          ],
+          "data": {
+            "name": "Exit",
+            "color": "red",
+            "steps": [
+              "5fde75c44a001a20aa67166d",
+              "5f9f562f11b31520c2a2a6e5"
+            ]
+          }
+        },
+        "5fde75c44a001a20aa67166d": {
+          "nodeID": "5fde75c44a001a20aa67166d",
+          "type": "speak",
+          "data": {
+            "randomize": false,
+            "dialogs": [
+              {
+                "voice": "Alexa",
+                "content": "Bye for now."
+              }
+            ],
+            "ports": [
+              {
+                "type": "",
+                "target": "5f9f562f11b31520c2a2a6e5",
+                "id": "5fde75c44a001a20aa671670"
+              }
+            ]
+          }
+        }
+      },
+      "children": [],
+      "versionID": "6056b565412bf5001cbb66d4",
+      "creatorID": 59546,
+      "modified": 1616295269
+    },
+    "6056b5655ffb660033a907f1": {
+      "_id": "6056b5655ffb660033a907f1",
+      "name": "ROOT",
+      "offsetX": -454.3566770440766,
+      "offsetY": 98.26350974930347,
+      "zoom": 80,
+      "variables": [],
+      "nodes": {
+        "5f9f562f11b31520c2a2a6de": {
+          "nodeID": "5f9f562f11b31520c2a2a6de",
+          "type": "start",
+          "coords": [
+            -841.25,
+            -75
+          ],
+          "data": {
+            "name": "Start",
+            "color": "standard",
+            "ports": [
+              {
+                "type": "",
+                "target": "60564acba8dfcead31900f5b",
+                "id": "5fde6fac5bc1c56319fad39b"
+              }
+            ],
+            "steps": [
+              "5f9f562f11b31520c2a2a6df",
+              "5f9f562f11b31520c2a2a6e0",
+              "5fde6fb05bc1c56319fad3a0"
+            ]
+          }
+        },
+        "5f9f562f11b31520c2a2a6df": {
+          "nodeID": "5f9f562f11b31520c2a2a6df",
+          "type": "command",
+          "data": {
+            "name": "Help",
+            "intent": "AMAZON.HelpIntent",
+            "diagramID": "6056b5655ffb660033a907f6",
+            "mappings": [],
+            "next": null,
+            "ports": []
+          }
+        },
+        "5f9f562f11b31520c2a2a6e0": {
+          "nodeID": "5f9f562f11b31520c2a2a6e0",
+          "type": "command",
+          "data": {
+            "name": "Stop",
+            "intent": "AMAZON.StopIntent",
+            "diagramID": "6056b5655ffb660033a907f4",
+            "mappings": [],
+            "next": null,
+            "ports": []
+          }
+        },
+        "5fde6fb05bc1c56319fad3a0": {
+          "nodeID": "5fde6fb05bc1c56319fad3a0",
+          "type": "command",
+          "data": {
+            "name": "Cancel",
+            "intent": "AMAZON.CancelIntent",
+            "diagramID": "6056b5655ffb660033a907f4",
+            "mappings": [],
+            "next": null,
+            "ports": []
+          }
+        },
+        "6055fdd4a8dfcead3190089e": {
+          "nodeID": "6055fdd4a8dfcead3190089e",
+          "type": "speak",
+          "data": {
+            "randomize": false,
+            "dialogs": [
+              {
+                "voice": "Alexa",
+                "content": "<prosody volume=\"medium\"> Hello and welcome to Mercedes. I will guide you around until a sales assistant arrives. <break strength=\"medium\" />You can walk around freely and I will give you some backgroundinformation. If you want me to stop talking just say Alexa cancel <break time=\"500ms\" />  One last thing, <break time=\"300ms\" />I recommend you go to the history section where I can tell you my story and how the company got my name. </prosody>"
+              }
+            ],
+            "ports": [
+              {
+                "type": "",
+                "target": "60560402a8dfcead319008aa",
+                "id": "6055fdd4a8dfcead3190089f"
+              }
+            ]
+          }
+        },
+        "6055fdd4a8dfcead3190089c": {
+          "nodeID": "6055fdd4a8dfcead3190089c",
+          "type": "block",
+          "coords": [
+            -15,
+            -19.000000000000057
+          ],
+          "data": {
+            "name": "Block",
+            "color": "standard",
+            "steps": [
+              "6055fdd4a8dfcead3190089e"
+            ]
+          }
+        },
+        "60560402a8dfcead319008a6": {
+          "nodeID": "60560402a8dfcead319008a6",
+          "type": "api",
+          "data": {
+            "url": "http://51.154.217.246:6942/api/info.json",
+            "body": [
+              {
+                "key": "",
+                "val": ""
+              }
+            ],
+            "params": [
+              {
+                "key": "",
+                "val": ""
+              }
+            ],
+            "method": "GET",
+            "headers": [
+              {
+                "key": "",
+                "val": ""
+              }
+            ],
+            "content": "",
+            "mappings": [
+              {
+                "path": "response.location",
+                "var": "Location"
+              }
+            ],
+            "bodyType": "formData",
+            "selectedAction": "Make a GET Request",
+            "selectedIntegration": "Custom API",
+            "ports": [
+              {
+                "type": "",
+                "target": "60562e00a8dfcead31900aec",
+                "id": "60560402a8dfcead319008a8"
+              },
+              {
+                "type": "fail",
+                "target": null,
+                "id": "60560402a8dfcead319008a9"
+              }
+            ]
+          }
+        },
+        "60560402a8dfcead319008aa": {
+          "nodeID": "60560402a8dfcead319008aa",
+          "type": "block",
+          "coords": [
+            347.19584630509587,
+            174.9206128133707
+          ],
+          "data": {
+            "name": "Block",
+            "color": "standard",
+            "steps": [
+              "60560402a8dfcead319008a6"
+            ]
+          }
+        },
+        "6056040ea8dfcead319008be": {
+          "nodeID": "6056040ea8dfcead319008be",
+          "type": "speak",
+          "data": {
+            "randomize": false,
+            "dialogs": [
+              {
+                "voice": "Alexa",
+                "content": "<break strength=\"x-strong\" />"
+              }
+            ],
+            "ports": [
+              {
+                "type": "",
+                "target": "60560402a8dfcead319008aa",
+                "id": "6056040ea8dfcead319008c0"
+              }
+            ]
+          }
+        },
+        "6056040ea8dfcead319008c1": {
+          "nodeID": "6056040ea8dfcead319008c1",
+          "type": "block",
+          "coords": [
+            503.75,
+            967.2499999999999
+          ],
+          "data": {
+            "name": "Block",
+            "color": "standard",
+            "steps": [
+              "6056040ea8dfcead319008be"
+            ]
+          }
+        },
+        "60560436a8dfcead319008d1": {
+          "nodeID": "60560436a8dfcead319008d1",
+          "type": "flow",
+          "data": {
+            "diagramID": "6056b5655ffb660033a907f5",
+            "variableMap": null,
+            "ports": [
+              {
+                "type": "",
+                "target": "6056040ea8dfcead319008c1",
+                "id": "60560436a8dfcead319008d2"
+              }
+            ]
+          }
+        },
+        "60560436a8dfcead319008cf": {
+          "nodeID": "60560436a8dfcead319008cf",
+          "type": "block",
+          "coords": [
+            2467.5,
+            150.99999999999994
+          ],
+          "data": {
+            "name": "Block",
+            "color": "standard",
+            "steps": [
+              "60560436a8dfcead319008d1"
+            ]
+          }
+        },
+        "60562cfba8dfcead31900a1f": {
+          "nodeID": "60562cfba8dfcead31900a1f",
+          "type": "flow",
+          "data": {
+            "diagramID": "6056b5655ffb660033a907f2",
+            "variableMap": null,
+            "ports": [
+              {
+                "type": "",
+                "target": "6056040ea8dfcead319008c1",
+                "id": "60562cfba8dfcead31900a20"
+              }
+            ]
+          }
+        },
+        "60562cfba8dfcead31900a1d": {
+          "nodeID": "60562cfba8dfcead31900a1d",
+          "type": "block",
+          "coords": [
+            2526.25,
+            734.4999999999999
+          ],
+          "data": {
+            "name": "Block",
+            "color": "standard",
+            "steps": [
+              "60562cfba8dfcead31900a1f"
+            ]
+          }
+        },
+        "60562d50a8dfcead31900a7c": {
+          "nodeID": "60562d50a8dfcead31900a7c",
+          "type": "flow",
+          "data": {
+            "diagramID": "6056b5655ffb660033a907f3",
+            "variableMap": null,
+            "ports": [
+              {
+                "type": "",
+                "target": "6056040ea8dfcead319008be",
+                "id": "60562d50a8dfcead31900a7d"
+              }
+            ]
+          }
+        },
+        "60562d50a8dfcead31900a7a": {
+          "nodeID": "60562d50a8dfcead31900a7a",
+          "type": "block",
+          "coords": [
+            2460,
+            434.4999999999999
+          ],
+          "data": {
+            "name": "Block",
+            "color": "standard",
+            "steps": [
+              "60562d50a8dfcead31900a7c"
+            ]
+          }
+        },
+        "60562e00a8dfcead31900aec": {
+          "nodeID": "60562e00a8dfcead31900aec",
+          "type": "if",
+          "data": {
+            "expressions": [
+              {
+                "type": "equals",
+                "value": [
+                  {
+                    "type": "variable",
+                    "value": "Location",
+                    "depth": 1
+                  },
+                  {
+                    "type": "value",
+                    "value": "EQC",
+                    "depth": 1
+                  }
+                ],
+                "depth": 0
+              }
+            ],
+            "ports": [
+              {
+                "type": "",
+                "target": "60562f31a8dfcead31900b16",
+                "id": "60562e00a8dfcead31900aee"
+              },
+              {
+                "type": "",
+                "target": "60560436a8dfcead319008cf",
+                "id": "60562e00a8dfcead31900aef"
+              }
+            ]
+          }
+        },
+        "60562e00a8dfcead31900af0": {
+          "nodeID": "60562e00a8dfcead31900af0",
+          "type": "block",
+          "coords": [
+            1258.75,
+            10.749999999999886
+          ],
+          "data": {
+            "name": "Block",
+            "color": "standard",
+            "steps": [
+              "60562e00a8dfcead31900aec"
+            ]
+          }
+        },
+        "60562f31a8dfcead31900b12": {
+          "nodeID": "60562f31a8dfcead31900b12",
+          "type": "if",
+          "data": {
+            "expressions": [
+              {
+                "type": "equals",
+                "value": [
+                  {
+                    "type": "variable",
+                    "value": "Location",
+                    "depth": 1
+                  },
+                  {
+                    "type": "value",
+                    "value": "AMG",
+                    "depth": 1
+                  }
+                ],
+                "depth": 0
+              },
+              {
+                "type": "equals",
+                "value": [
+                  {
+                    "type": "variable",
+                    "value": "Location",
+                    "depth": 1
+                  },
+                  {
+                    "type": "value",
+                    "value": "History",
+                    "depth": 1
+                  }
+                ],
+                "depth": 0
+              },
+              {
+                "type": "equals",
+                "value": [
+                  {
+                    "type": "variable",
+                    "value": "Location",
+                    "depth": 1
+                  },
+                  {
+                    "type": "value",
+                    "value": "LOUNGE",
+                    "depth": 1
+                  }
+                ],
+                "depth": 0
+              }
+            ],
+            "ports": [
+              {
+                "type": "",
+                "target": "6056040ea8dfcead319008c1",
+                "id": "60562f31a8dfcead31900b14"
+              },
+              {
+                "type": "",
+                "target": "60562d50a8dfcead31900a7a",
+                "id": "60562f31a8dfcead31900b15"
+              },
+              {
+                "type": 2,
+                "target": "60562cfba8dfcead31900a1d",
+                "id": "60562f52a8dfcead31900b2a"
+              },
+              {
+                "type": 3,
+                "target": "6056040ea8dfcead319008c1",
+                "id": "605654217dcafa02dec0cbe6"
+              }
+            ]
+          }
+        },
+        "60562f31a8dfcead31900b16": {
+          "nodeID": "60562f31a8dfcead31900b16",
+          "type": "block",
+          "coords": [
+            1352.5,
+            264.2499999999999
+          ],
+          "data": {
+            "name": "Block",
+            "color": "standard",
+            "steps": [
+              "60562f31a8dfcead31900b12"
+            ]
+          }
+        },
+        "60564610a8dfcead31900ea6": {
+          "nodeID": "60564610a8dfcead31900ea6",
+          "type": "if",
+          "data": {
+            "expressions": [
+              {
+                "type": "equals",
+                "value": [
+                  {
+                    "type": "variable",
+                    "value": "ToldEQC",
+                    "depth": 1
+                  },
+                  {
+                    "type": "value",
+                    "value": "false",
+                    "depth": 1
+                  }
+                ],
+                "depth": 0
+              }
+            ],
+            "ports": [
+              {
+                "type": "",
+                "target": "6056040ea8dfcead319008c1",
+                "id": "60564610a8dfcead31900ea8"
+              },
+              {
+                "type": "",
+                "target": "60560436a8dfcead319008cf",
+                "id": "60564610a8dfcead31900ea9"
+              }
+            ]
+          }
+        },
+        "60564610a8dfcead31900eaa": {
+          "nodeID": "60564610a8dfcead31900eaa",
+          "type": "block",
+          "coords": [
+            1867.4756725815685,
+            84.44249882916161
+          ],
+          "data": {
+            "name": "Block",
+            "color": "standard",
+            "steps": [
+              "60564610a8dfcead31900ea6"
+            ]
+          }
+        },
+        "60564acba8dfcead31900f58": {
+          "nodeID": "60564acba8dfcead31900f58",
+          "type": "set",
+          "data": {
+            "sets": [
+              {
+                "variable": "ToldEQC",
+                "expression": {
+                  "type": "value",
+                  "value": "false",
+                  "depth": 0
+                }
+              },
+              {
+                "variable": "ToldAMG",
+                "expression": {
+                  "type": "value",
+                  "value": "false",
+                  "depth": 0
+                }
+              },
+              {
+                "variable": "ToldHistory",
+                "expression": {
+                  "type": "value",
+                  "value": "false",
+                  "depth": 0
+                }
+              }
+            ],
+            "ports": [
+              {
+                "type": "",
+                "target": "6055fdd4a8dfcead3190089c",
+                "id": "60564acba8dfcead31900f5a"
+              }
+            ]
+          }
+        },
+        "60564acba8dfcead31900f5b": {
+          "nodeID": "60564acba8dfcead31900f5b",
+          "type": "block",
+          "coords": [
+            -388.75,
+            -63.000000000000114
+          ],
+          "data": {
+            "name": "Block",
+            "color": "standard",
+            "steps": [
+              "60564acba8dfcead31900f58"
+            ]
+          }
+        },
+        "60564b2ca8dfcead31900f66": {
+          "nodeID": "60564b2ca8dfcead31900f66",
+          "type": "if",
+          "data": {
+            "expressions": [
+              {
+                "type": "equals",
+                "value": [
+                  {
+                    "type": "variable",
+                    "value": "ToldHistory",
+                    "depth": 1
+                  },
+                  {
+                    "type": "value",
+                    "value": "false",
+                    "depth": 1
+                  }
+                ],
+                "depth": 0
+              }
+            ],
+            "ports": [
+              {
+                "type": "",
+                "target": "6056040ea8dfcead319008c1",
+                "id": "60564b2ca8dfcead31900f68"
+              },
+              {
+                "type": "",
+                "target": "60562cfba8dfcead31900a1d",
+                "id": "60564b2ca8dfcead31900f69"
+              }
+            ]
+          }
+        },
+        "60564b2ca8dfcead31900f6a": {
+          "nodeID": "60564b2ca8dfcead31900f6a",
+          "type": "block",
+          "coords": [
+            1838.75,
+            551.9999999999999
+          ],
+          "data": {
+            "name": "Block",
+            "color": "standard",
+            "steps": [
+              "60564b2ca8dfcead31900f66"
+            ]
+          }
+        },
+        "60564b41a8dfcead31900f75": {
+          "nodeID": "60564b41a8dfcead31900f75",
+          "type": "if",
+          "data": {
+            "expressions": [
+              {
+                "type": "equals",
+                "value": [
+                  {
+                    "type": "variable",
+                    "value": "ToldAMG",
+                    "depth": 1
+                  },
+                  {
+                    "type": "value",
+                    "value": "false",
+                    "depth": 1
+                  }
+                ],
+                "depth": 0
+              }
+            ],
+            "ports": [
+              {
+                "type": "",
+                "target": "6056040ea8dfcead319008c1",
+                "id": "60564b41a8dfcead31900f77"
+              },
+              {
+                "type": "",
+                "target": "60562d50a8dfcead31900a7a",
+                "id": "60564b41a8dfcead31900f78"
+              }
+            ]
+          }
+        },
+        "60564b41a8dfcead31900f79": {
+          "nodeID": "60564b41a8dfcead31900f79",
+          "type": "block",
+          "coords": [
+            1920,
+            296.9999999999999
+          ],
+          "data": {
+            "name": "Block",
+            "color": "standard",
+            "steps": [
+              "60564b41a8dfcead31900f75"
+            ]
+          }
+        },
+        "60564c66a8dfcead31901047": {
+          "nodeID": "60564c66a8dfcead31901047",
+          "type": "if",
+          "data": {
+            "expressions": [
+              {
+                "type": "equals",
+                "value": [
+                  {
+                    "type": "variable",
+                    "value": "ToldEQC",
+                    "depth": 1
+                  },
+                  {
+                    "type": "value",
+                    "value": "true",
+                    "depth": 1
+                  }
+                ],
+                "depth": 0
+              }
+            ],
+            "ports": [
+              {
+                "type": "",
+                "target": "60562e00a8dfcead31900aec",
+                "id": "60564c66a8dfcead31901049"
+              },
+              {
+                "type": "",
+                "target": "60564c84a8dfcead31901055",
+                "id": "60564c66a8dfcead3190104a"
+              }
+            ]
+          }
+        },
+        "60564c66a8dfcead3190104b": {
+          "nodeID": "60564c66a8dfcead3190104b",
+          "type": "block",
+          "coords": [
+            522.0903267774953,
+            -110.05555906921376
+          ],
+          "data": {
+            "name": "Block",
+            "color": "standard",
+            "steps": [
+              "60564c66a8dfcead31901047"
+            ]
+          }
+        },
+        "60564c84a8dfcead31901055": {
+          "nodeID": "60564c84a8dfcead31901055",
+          "type": "if",
+          "data": {
+            "expressions": [
+              {
+                "type": "equals",
+                "value": [
+                  {
+                    "type": "variable",
+                    "value": "ToldAMG",
+                    "depth": 1
+                  },
+                  {
+                    "type": "value",
+                    "value": "true",
+                    "depth": 1
+                  }
+                ],
+                "depth": 0
+              }
+            ],
+            "ports": [
+              {
+                "type": "",
+                "target": "60562e00a8dfcead31900aec",
+                "id": "60564c84a8dfcead31901057"
+              },
+              {
+                "type": "",
+                "target": "60564c9da8dfcead31901062",
+                "id": "60564c84a8dfcead31901058"
+              }
+            ]
+          }
+        },
+        "60564c84a8dfcead31901059": {
+          "nodeID": "60564c84a8dfcead31901059",
+          "type": "block",
+          "coords": [
+            932.896051749371,
+            -262.1037345653333
+          ],
+          "data": {
+            "name": "Block",
+            "color": "standard",
+            "steps": [
+              "60564c84a8dfcead31901055"
+            ]
+          }
+        },
+        "60564c9da8dfcead31901062": {
+          "nodeID": "60564c9da8dfcead31901062",
+          "type": "if",
+          "data": {
+            "expressions": [
+              {
+                "type": "equals",
+                "value": [
+                  {
+                    "type": "variable",
+                    "value": "ToldHistory",
+                    "depth": 1
+                  },
+                  {
+                    "type": "value",
+                    "value": "true",
+                    "depth": 1
+                  }
+                ],
+                "depth": 0
+              }
+            ],
+            "ports": [
+              {
+                "type": "",
+                "target": "60562e00a8dfcead31900af0",
+                "id": "60564c9da8dfcead31901064"
+              },
+              {
+                "type": "",
+                "target": "60564ce7a8dfcead31901075",
+                "id": "60564c9da8dfcead31901065"
+              }
+            ]
+          }
+        },
+        "60564c9da8dfcead31901066": {
+          "nodeID": "60564c9da8dfcead31901066",
+          "type": "block",
+          "coords": [
+            1428.2070562522765,
+            -267.54220221678736
+          ],
+          "data": {
+            "name": "Block",
+            "color": "standard",
+            "steps": [
+              "60564c9da8dfcead31901062"
+            ]
+          }
+        },
+        "60564ce7a8dfcead31901072": {
+          "nodeID": "60564ce7a8dfcead31901072",
+          "type": "speak",
+          "data": {
+            "randomize": false,
+            "dialogs": [
+              {
+                "voice": "Alexa",
+                "content": "Do you want to hear the stations again?"
+              }
+            ],
+            "ports": [
+              {
+                "type": "",
+                "target": "60564d1ca8dfcead3190108d",
+                "id": "60564ce7a8dfcead31901074"
+              }
+            ]
+          }
+        },
+        "60564ce7a8dfcead31901075": {
+          "nodeID": "60564ce7a8dfcead31901075",
+          "type": "block",
+          "coords": [
+            1781.6441171879067,
+            -381.19157516782025
+          ],
+          "data": {
+            "name": "Block",
+            "color": "standard",
+            "steps": [
+              "60564ce7a8dfcead31901072"
+            ]
+          }
+        },
+        "60564d1ca8dfcead31901089": {
+          "nodeID": "60564d1ca8dfcead31901089",
+          "type": "interaction",
+          "data": {
+            "name": "Choice",
+            "else": {
+              "type": "path",
+              "randomize": false,
+              "reprompts": [
+                {
+                  "voice": "Alexa",
+                  "content": ""
+                }
+              ]
+            },
+            "choices": [
+              {
+                "intent": "AMAZON.YesIntent",
+                "mappings": []
+              }
+            ],
+            "reprompt": null,
+            "chips": null,
+            "ports": [
+              {
+                "type": "",
+                "target": "60562e00a8dfcead31900af0",
+                "id": "60564d1ca8dfcead3190108b"
+              },
+              {
+                "type": "",
+                "target": "60564d47a8dfcead31901097",
+                "id": "60564d1ca8dfcead3190108c"
+              }
+            ]
+          }
+        },
+        "60564d1ca8dfcead3190108d": {
+          "nodeID": "60564d1ca8dfcead3190108d",
+          "type": "block",
+          "coords": [
+            2244.983868449811,
+            -342.47585471197397
+          ],
+          "data": {
+            "name": "Block",
+            "color": "standard",
+            "steps": [
+              "60564d1ca8dfcead31901089"
+            ]
+          }
+        },
+        "60564d47a8dfcead31901097": {
+          "nodeID": "60564d47a8dfcead31901097",
+          "type": "set",
+          "data": {
+            "sets": [
+              {
+                "variable": "ToldEQC",
+                "expression": {
+                  "type": "value",
+                  "value": "false",
+                  "depth": 0
+                }
+              },
+              {
+                "variable": "ToldAMG",
+                "expression": {
+                  "type": "value",
+                  "value": "false",
+                  "depth": 0
+                }
+              },
+              {
+                "variable": "ToldHistory",
+                "expression": {
+                  "type": "value",
+                  "value": "false",
+                  "depth": 0
+                }
+              }
+            ],
+            "ports": [
+              {
+                "type": "",
+                "target": "60562e00a8dfcead31900af0",
+                "id": "60564d47a8dfcead31901099"
+              }
+            ]
+          }
+        },
+        "60564d47a8dfcead3190109a": {
+          "nodeID": "60564d47a8dfcead3190109a",
+          "type": "block",
+          "coords": [
+            2725.808138627257,
+            -266.29330800853415
+          ],
+          "data": {
+            "name": "Block",
+            "color": "standard",
+            "steps": [
+              "60564d47a8dfcead31901097"
+            ]
+          }
+        }
+      },
+      "children": [
+        "6056b5655ffb660033a907f6",
+        "6056b5655ffb660033a907f4",
+        "6056b5655ffb660033a907f5",
+        "6056b5655ffb660033a907f2",
+        "6056b5655ffb660033a907f3"
+      ],
+      "versionID": "6056b565412bf5001cbb66d4",
+      "creatorID": 59546,
+      "modified": 1616301477
+    },
+    "6056b5655ffb660033a907f4": {
+      "_id": "6056b5655ffb660033a907f4",
+      "name": "End Session",
+      "offsetX": 206.51942553425963,
+      "offsetY": 119.61838012311347,
+      "zoom": 93.10542690398123,
+      "variables": [],
+      "nodes": {
+        "5f9f562f11b31520c2a2a6e7": {
+          "nodeID": "5f9f562f11b31520c2a2a6e7",
+          "type": "start",
+          "coords": [
+            360,
+            120
+          ],
+          "data": {
+            "name": "Start",
+            "color": "standard",
+            "ports": [
+              {
+                "type": "",
+                "target": "5f9f562f11b31520c2a2a6e8",
+                "id": "5fde6fe15bc1c56319fad3b2"
+              }
+            ],
+            "steps": []
+          }
+        },
+        "5f9f562f11b31520c2a2a6e8": {
+          "nodeID": "5f9f562f11b31520c2a2a6e8",
+          "type": "speak",
+          "data": {
+            "randomize": false,
+            "dialogs": [
+              {
+                "voice": "Alexa",
+                "content": "Okay, this session is now ending."
+              }
+            ],
+            "ports": [
+              {
+                "type": "",
+                "target": "5f9f562f11b31520c2a2a6ea",
+                "id": "5fde6fe15bc1c56319fad3b3"
+              }
+            ]
+          }
+        },
+        "5f9f562f11b31520c2a2a6e9": {
+          "nodeID": "5f9f562f11b31520c2a2a6e9",
+          "type": "block",
+          "coords": [
+            805.9688890631405,
+            120.94792332948695
+          ],
+          "data": {
+            "name": "Exit",
+            "color": "red",
+            "steps": [
+              "5f9f562f11b31520c2a2a6e8",
+              "5f9f562f11b31520c2a2a6ea"
+            ]
+          }
+        },
+        "5f9f562f11b31520c2a2a6ea": {
+          "nodeID": "5f9f562f11b31520c2a2a6ea",
+          "type": "exit",
+          "data": {
+            "ports": [
+              {
+                "type": "",
+                "target": null,
+                "id": "5fde6fe15bc1c56319fad3b4"
+              }
+            ]
+          }
+        }
+      },
+      "children": [],
+      "versionID": "6056b565412bf5001cbb66d4",
+      "creatorID": 59546,
+      "modified": 1616295269
+    },
+    "6056b5655ffb660033a907f5": {
+      "_id": "6056b5655ffb660033a907f5",
+      "offsetX": 446.39999999999986,
+      "offsetY": 182.60000000000005,
+      "zoom": 80,
+      "variables": [],
+      "children": [],
+      "nodes": {
+        "6055f5194b0743f65d12b179": {
+          "nodeID": "6055f5194b0743f65d12b179",
+          "type": "start",
+          "coords": [
+            360,
+            120
+          ],
+          "data": {
+            "name": "Start",
+            "color": "standard",
+            "ports": [
+              {
+                "type": "",
+                "target": "6055f5404b0743f65d12b1ed",
+                "id": "6055f5204b0743f65d12b17a"
+              }
+            ],
+            "steps": []
+          }
+        },
+        "6055f5404b0743f65d12b1ef": {
+          "nodeID": "6055f5404b0743f65d12b1ef",
+          "type": "speak",
+          "data": {
+            "randomize": false,
+            "dialogs": [
+              {
+                "voice": "Alexa",
+                "content": "I see you have found our first all-electric SUV. Shall I tell you some exciting details?"
+              }
+            ],
+            "ports": [
+              {
+                "type": "",
+                "target": "6055f5624b0743f65d12b26d",
+                "id": "6055f5404b0743f65d12b1f0"
+              }
+            ]
+          }
+        },
+        "6055f5404b0743f65d12b1ed": {
+          "nodeID": "6055f5404b0743f65d12b1ed",
+          "type": "block",
+          "coords": [
+            853.75,
+            80.99999999999994
+          ],
+          "data": {
+            "name": "Block",
+            "color": "standard",
+            "steps": [
+              "6055f5404b0743f65d12b1ef"
+            ]
+          }
+        },
+        "6055f5624b0743f65d12b26f": {
+          "nodeID": "6055f5624b0743f65d12b26f",
+          "type": "interaction",
+          "data": {
+            "name": "Choice",
+            "else": {
+              "type": "path",
+              "randomize": false,
+              "reprompts": [
+                {
+                  "voice": "Alexa",
+                  "content": ""
+                }
+              ]
+            },
+            "choices": [
+              {
+                "intent": "AMAZON.YesIntent",
+                "mappings": []
+              }
+            ],
+            "reprompt": null,
+            "chips": null,
+            "ports": [
+              {
+                "type": "",
+                "target": "6055f5af4b0743f65d12b383",
+                "id": "6055f5624b0743f65d12b270"
+              },
+              {
+                "type": "",
+                "target": "6055f58d4b0743f65d12b2f6",
+                "id": "6055f5624b0743f65d12b271"
+              }
+            ]
+          }
+        },
+        "6055f5624b0743f65d12b26d": {
+          "nodeID": "6055f5624b0743f65d12b26d",
+          "type": "block",
+          "coords": [
+            1622.5,
+            112.24999999999994
+          ],
+          "data": {
+            "name": "Block",
+            "color": "standard",
+            "steps": [
+              "6055f5624b0743f65d12b26f"
+            ]
+          }
+        },
+        "6055f58d4b0743f65d12b2f8": {
+          "nodeID": "6055f58d4b0743f65d12b2f8",
+          "type": "speak",
+          "data": {
+            "randomize": false,
+            "dialogs": [
+              {
+                "voice": "Alexa",
+                "content": "The 408 kilowatts that the EQC can produce are the equivalent of 511 horsepower.<break strength=\"medium\" /> You have to feel the acceleration. It's just wild."
+              }
+            ],
+            "ports": [
+              {
+                "type": "",
+                "target": "6055f5af4b0743f65d12b385",
+                "id": "6055f58d4b0743f65d12b2f9"
+              }
+            ]
+          }
+        },
+        "6055f58d4b0743f65d12b2f6": {
+          "nodeID": "6055f58d4b0743f65d12b2f6",
+          "type": "block",
+          "coords": [
+            858.75,
+            473.49999999999994
+          ],
+          "data": {
+            "name": "Block",
+            "color": "standard",
+            "steps": [
+              "6055f58d4b0743f65d12b2f8"
+            ]
+          }
+        },
+        "6055f5af4b0743f65d12b385": {
+          "nodeID": "6055f5af4b0743f65d12b385",
+          "type": "speak",
+          "data": {
+            "randomize": false,
+            "dialogs": [
+              {
+                "voice": "Alexa",
+                "content": "<break strength=\"strong\" />If you want to sit in the car, I can show you the sound of the car while driving."
+              }
+            ],
+            "ports": [
+              {
+                "type": "",
+                "target": "6055f5e14b0743f65d12b426",
+                "id": "6055f5af4b0743f65d12b386"
+              }
+            ]
+          }
+        },
+        "6055f5af4b0743f65d12b383": {
+          "nodeID": "6055f5af4b0743f65d12b383",
+          "type": "block",
+          "coords": [
+            1495,
+            453.4999999999999
+          ],
+          "data": {
+            "name": "Block",
+            "color": "standard",
+            "steps": [
+              "6055f5af4b0743f65d12b385"
+            ]
+          }
+        },
+        "6055f5e14b0743f65d12b426": {
+          "nodeID": "6055f5e14b0743f65d12b426",
+          "type": "interaction",
+          "data": {
+            "name": "Choice",
+            "else": {
+              "type": "path",
+              "randomize": false,
+              "reprompts": [
+                {
+                  "voice": "Alexa",
+                  "content": ""
+                }
+              ]
+            },
+            "choices": [
+              {
+                "intent": "AMAZON.YesIntent",
+                "mappings": []
+              }
+            ],
+            "reprompt": null,
+            "chips": null,
+            "ports": [
+              {
+                "type": "",
+                "target": null,
+                "id": "6055f5e14b0743f65d12b427"
+              },
+              {
+                "type": "",
+                "target": "6055f5f14b0743f65d12b433",
+                "id": "6055f5e14b0743f65d12b428"
+              }
+            ]
+          }
+        },
+        "6055f5e14b0743f65d12b424": {
+          "nodeID": "6055f5e14b0743f65d12b424",
+          "type": "block",
+          "coords": [
+            1962.5,
+            447.24999999999994
+          ],
+          "data": {
+            "name": "Block",
+            "color": "standard",
+            "steps": [
+              "6055f5e14b0743f65d12b426"
+            ]
+          }
+        },
+        "6055f5f14b0743f65d12b430": {
+          "nodeID": "6055f5f14b0743f65d12b430",
+          "type": "speak",
+          "data": {
+            "randomize": false,
+            "dialogs": [
+              {
+                "voice": "audio",
+                "content": "https://s3.amazonaws.com/com.getstoryflow.audio.production/1616260299963-electriccarfreesound.wav"
+              }
+            ],
+            "ports": [
+              {
+                "type": "",
+                "target": "605645c3a8dfcead31900e5e",
+                "id": "6055f5f14b0743f65d12b432"
+              }
+            ]
+          }
+        },
+        "6055f5f14b0743f65d12b433": {
+          "nodeID": "6055f5f14b0743f65d12b433",
+          "type": "block",
+          "coords": [
+            2473.75,
+            364.74999999999994
+          ],
+          "data": {
+            "name": "Block",
+            "color": "standard",
+            "steps": [
+              "6055f5f14b0743f65d12b430"
+            ]
+          }
+        },
+        "605645c3a8dfcead31900e5e": {
+          "nodeID": "605645c3a8dfcead31900e5e",
+          "type": "set",
+          "data": {
+            "sets": [
+              {
+                "variable": "ToldEQC",
+                "expression": {
+                  "type": "value",
+                  "value": "true",
+                  "depth": 0
+                }
+              }
+            ],
+            "ports": [
+              {
+                "type": "",
+                "target": null,
+                "id": "605645c3a8dfcead31900e60"
+              }
+            ]
+          }
+        },
+        "605645c3a8dfcead31900e61": {
+          "nodeID": "605645c3a8dfcead31900e61",
+          "type": "block",
+          "coords": [
+            2965,
+            226.99999999999994
+          ],
+          "data": {
+            "name": "Block",
+            "color": "standard",
+            "steps": [
+              "605645c3a8dfcead31900e5e"
+            ]
+          }
+        }
+      },
+      "versionID": "6056b565412bf5001cbb66d4",
+      "creatorID": 59546,
+      "name": "EQC",
+      "modified": 1616301434
+    },
+    "6056b5655ffb660033a907f2": {
+      "_id": "6056b5655ffb660033a907f2",
+      "offsetX": -1269.6000000000001,
+      "offsetY": 9.400000000000047,
+      "zoom": 80,
+      "variables": [],
+      "children": [],
+      "nodes": {
+        "605629494b0743f65d12b9b7": {
+          "nodeID": "605629494b0743f65d12b9b7",
+          "type": "start",
+          "coords": [
+            360,
+            120
+          ],
+          "data": {
+            "name": "Start",
+            "color": "standard",
+            "ports": [
+              {
+                "type": "",
+                "target": "605629b44b0743f65d12ba49",
+                "id": "605629504b0743f65d12b9b8"
+              }
+            ],
+            "steps": []
+          }
+        },
+        "605629b44b0743f65d12ba46": {
+          "nodeID": "605629b44b0743f65d12ba46",
+          "type": "speak",
+          "data": {
+            "randomize": false,
+            "dialogs": [
+              {
+                "voice": "Alexa",
+                "content": "Do you want to know how the company got my name?"
+              }
+            ],
+            "ports": [
+              {
+                "type": "",
+                "target": "605629d24b0743f65d12ba55",
+                "id": "605629b44b0743f65d12ba48"
+              }
+            ]
+          }
+        },
+        "605629b44b0743f65d12ba49": {
+          "nodeID": "605629b44b0743f65d12ba49",
+          "type": "block",
+          "coords": [
+            905,
+            175.99999999999994
+          ],
+          "data": {
+            "name": "Block",
+            "color": "standard",
+            "steps": [
+              "605629b44b0743f65d12ba46"
+            ]
+          }
+        },
+        "605629d24b0743f65d12ba51": {
+          "nodeID": "605629d24b0743f65d12ba51",
+          "type": "interaction",
+          "data": {
+            "name": "Choice",
+            "else": {
+              "type": "path",
+              "randomize": false,
+              "reprompts": [
+                {
+                  "voice": "Alexa",
+                  "content": ""
+                }
+              ]
+            },
+            "choices": [
+              {
+                "intent": "AMAZON.YesIntent",
+                "mappings": []
+              }
+            ],
+            "reprompt": null,
+            "chips": null,
+            "ports": [
+              {
+                "type": "",
+                "target": null,
+                "id": "605629d24b0743f65d12ba53"
+              },
+              {
+                "type": "",
+                "target": "605629ea4b0743f65d12ba5e",
+                "id": "605629d24b0743f65d12ba54"
+              }
+            ]
+          }
+        },
+        "605629d24b0743f65d12ba55": {
+          "nodeID": "605629d24b0743f65d12ba55",
+          "type": "block",
+          "coords": [
+            1445,
+            240.99999999999994
+          ],
+          "data": {
+            "name": "Block",
+            "color": "standard",
+            "steps": [
+              "605629d24b0743f65d12ba51"
+            ]
+          }
+        },
+        "605629ea4b0743f65d12ba5e": {
+          "nodeID": "605629ea4b0743f65d12ba5e",
+          "type": "speak",
+          "data": {
+            "randomize": false,
+            "dialogs": [
+              {
+                "voice": "Alexa",
+                "content": "In 1897, my father received his first Daimler-Motoren-Gesellschaft car. In the Nice-Magagnone-Nice touring race, his 16 horsepower Daimler racing car won the first prize. He then ordered a third of the year's production and demanded the construction of a new car, which he named after my first name <break time=\"300ms\" />the Mercedes.In March 1901, the new car scored a series of victories at the Nice Race Week. Thus the Mercedes brand was born. "
+              }
+            ],
+            "ports": [
+              {
+                "type": "",
+                "target": "60564be2a8dfcead31900fd6",
+                "id": "605629ea4b0743f65d12ba60"
+              }
+            ]
+          }
+        },
+        "605629ea4b0743f65d12ba61": {
+          "nodeID": "605629ea4b0743f65d12ba61",
+          "type": "block",
+          "coords": [
+            2022.5,
+            253.49999999999994
+          ],
+          "data": {
+            "name": "Block",
+            "color": "standard",
+            "steps": [
+              "605629ea4b0743f65d12ba5e"
+            ]
+          }
+        },
+        "60564be2a8dfcead31900fd3": {
+          "nodeID": "60564be2a8dfcead31900fd3",
+          "type": "set",
+          "data": {
+            "sets": [
+              {
+                "variable": "ToldHistory",
+                "expression": {
+                  "type": "value",
+                  "value": "true",
+                  "depth": 0
+                }
+              }
+            ],
+            "ports": [
+              {
+                "type": "",
+                "target": null,
+                "id": "60564be2a8dfcead31900fd5"
+              }
+            ]
+          }
+        },
+        "60564be2a8dfcead31900fd6": {
+          "nodeID": "60564be2a8dfcead31900fd6",
+          "type": "block",
+          "coords": [
+            2675,
+            419.74999999999994
+          ],
+          "data": {
+            "name": "Block",
+            "color": "standard",
+            "steps": [
+              "60564be2a8dfcead31900fd3"
+            ]
+          }
+        }
+      },
+      "versionID": "6056b565412bf5001cbb66d4",
+      "creatorID": 59546,
+      "name": "History",
+      "modified": 1616301455
+    }
+  }
+}
